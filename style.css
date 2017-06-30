@@ -1,0 +1,256 @@
+html {
+  background-image: url('images/back.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Slabo 27px', serif;
+
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+}
+
+a:hover {
+  border-bottom: 0.5px dashed grey;
+  padding-bottom: 1px;
+}
+
+footer h3 {
+  padding-top: 20px;
+}
+
+footer span {
+  color: #993300;
+  font-weight: bold;
+  font-size: 21px;
+}
+
+#name {
+  font-family: 'Dawning of a New Day', cursive;  color: white;
+  margin:0;
+  opacity: 0.7;
+  text-align: center;
+
+}
+
+.flex-container {
+  flex-wrap: wrap;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  width: 250px;
+  font-size: 34px;
+  margin: 0;
+  position: absolute;
+  right: 850px;
+  top: 365px;
+}
+
+.container {
+  width: 800px;
+  height: 800px;
+  margin: 50px auto;
+
+}
+
+.cell {
+  float: left;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  border: 1.5px dashed #333;
+  font-size: 23px;
+  padding: 10px;
+  text-align: center;
+}
+
+#board {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: url('images/board.png');
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position:center;
+
+}
+
+.sidebar {
+  position: relative;
+}
+
+.ladder {
+  text-indent: -9999px;
+  background-image: url('images/ladders.png');
+  opacity: 0.7;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.snake {
+  text-indent: -9999px;
+  background-image: url('images/snake2.png');
+  opacity: 0.7;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+}
+
+.modal_background {
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	overflow: visible;
+	top: 0;
+}
+
+#dice_modal_text, #player_modal_text, #snake_pop, #ladder_pop {
+  color: white;
+  font-size: 35px;
+  text-align:center;
+  margin: 18% auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#snake_pop, #ladder_pop, #dice_modal_text {
+  margin: 32% auto;
+}
+
+#dice_modal_name {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#dice_modal_number {
+  color: white;
+  font-size: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#dice_modal {
+	border: 1px solid #ccc;
+	position: fixed;
+	top: 30%;
+  bottom: 30%;
+	z-index: 99999;
+	background-color: rgba(0, 0, 0, 0.6);
+  height: 400px;
+  width: 400px;
+	left: 30%;
+	right: 30%;
+	-moz-box-shadow: 0 4px 30px -2px #000000;
+	-webkit-box-shadow: 0 4px 30px -2px #000000;
+	box-shadow: 0 4px 30px -2px #000000;
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
+}
+
+#title-logo {
+  width: 100%;
+  height: auto;
+  transform: scale(0.70, 0.70);
+  position: relative;
+
+}
+
+#board-img {
+  transform: scale(0.30, 0.30);
+}
+
+#points-board {
+  transform: scale(0.5, 0.5);
+  position: absolute;
+  left: -590px;
+  top: -285px;
+}
+
+#newGame {
+  transform: scale(0.5, 0.5);
+  position:absolute;
+  right: -590px;
+}
+
+#newPlayer {
+  transform: scale(0.49, 0.49);
+  position:absolute;
+  right: -590px;
+  top: 410px;
+}
+
+#rollDice {
+  transform: scale(0.51, 0.51);
+  position:absolute;
+  right: -590px;
+  top: 580px;
+}
+
+#newGame:hover {
+  cursor: url('images/play.png'), auto;
+}
+
+#newPlayer:hover {
+  cursor: url('images/player.png'), auto;
+}
+
+#rollDice:hover {
+  cursor: url('images/dice.png'), auto;
+}
+
+
+.monkey {
+  background-image: url('images/monkey.png');
+  opacity: 0.7;
+  background-repeat:no-repeat;
+  background-size: 30px;
+  background-position:left top;
+}
+
+.tiger {
+  background-image: url('images/tiger.png');
+  opacity: 0.7;
+  background-repeat:no-repeat;
+  background-size: 30px;
+  background-position:right top;
+}
+
+.croc {
+  background-image: url('images/croc.png');
+  opacity: 0.7;
+  background-repeat:no-repeat;
+  background-size: 30px;
+  background-position:left bottom;
+}
+
+.bear {
+  background-image: url('images/bear.png');
+  opacity: 0.7;
+  background-repeat:no-repeat;
+  background-size: 30px;
+  background-position: right bottom;
+}
